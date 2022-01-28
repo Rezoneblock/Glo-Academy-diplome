@@ -1,0 +1,901 @@
+@media screen and ( max-width: 1600px )
+  .product-card
+    .first-row
+      .col-40
+        min-width: 550px
+    &__section-sale
+      .product
+        margin-left: 0
+    &__specifications
+      justify-content: center
+      .col-30
+        display: none
+    &__product
+    &__adapt-new 
+      // display: flex
+      // justify-content: space-between
+      // margin-top: 50px
+    &__adapt-clean
+      // display: none
+    &__platforms
+      &__swiper
+        .product
+          margin-left: 30px
+        // display: none 
+  .hero
+    &__header
+      &__logo
+        margin-right: auto !important
+    &__catalog
+      &__list
+        &__name
+          margin-top: 2px
+          font-size: 14px !important
+    &__content
+      &__links
+        margin-left: 100px
+@media screen and ( max-width: 1530px )
+  .categories, .popular-products, .product-sale
+    .row
+      flex-wrap: wrap
+      .col-20
+        width: 50% !important
+        display: flex
+        margin-bottom: 20px
+        &:nth-of-type(n + 3)
+          margin-bottom: 0
+        &:nth-of-type(odd)
+          justify-content: flex-end
+          margin-left: -10px
+        &:nth-of-type(even)
+          justify-content: flex-start
+          margin-right: -10px
+  .catalog 
+    .row 
+      .col-20 
+        &:nth-of-type(n+3)
+          margin-top: 70px
+  .product-card
+    &__product
+      &__description
+        &__actions
+          display: flex
+          flex-direction: column
+          align-items: center
+          &__wholesale, &__like
+            margin-left: 0
+            margin-top: 20px
+    &__recent 
+      margin-top: 50px
+      &__header
+      &__row
+        display: flex
+    &__specifications
+      display: flex
+      flex-direction: column
+      align-items: center
+  .first-row
+    flex-direction: column
+    align-items: center
+    .col-60
+      margin-top: 50px
+        
+@media screen and ( max-width: 1450px )
+  .product-card
+    &__product
+      &__description
+        &__delivery
+          &__points
+            &__content
+              display: flex
+              flex-direction: column
+            &__item
+              margin-bottom: 20px
+              &:last-of-type
+                margin-bottom: 0
+              &:first-of-type
+                margin-right: 0
+    &__adapt-new 
+      margin-top: 50px
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .product
+        width: 320px
+      .col-20
+        margin-bottom: 20px
+        min-width: 320px
+  .mobile
+    padding-top: 30px
+    &__title
+      font-size: 40px
+      max-width: 600px
+      line-height: 40px
+  .hero
+    &__content
+      &__product__description
+        margin-top: 330px
+      &__links
+        margin-left: 100px
+  .statement
+    &__button
+      margin-right: -40px !important
+    .row 
+      flex-wrap: wrap
+      justify-content: center !important
+      .col-33
+        margin-right: 20px
+        .popular
+          margin-left: 40px
+          min-width: 150px
+        .very-popular
+          margin-right: -40px
+        .person
+          margin-right: -40px
+      .col-40
+        margin-left: -50px
+        img
+          margin-left: 10px !important
+          margin-right: auto !important
+    .col-100-first
+      margin-top: 20px
+      width: 100% !important
+@media screen and ( max-width: 1400px )  
+  .product-card
+    &__crumbs
+      padding-top: 0    
+  .hero
+    padding-bottom: 50px
+    &__content
+      &__col4
+        margin-left: auto !important
+      &__header
+        padding: 10px 0
+      &__image
+        margin-top: 50px
+        margin-bottom: -100px
+      &__product__description
+        margin-left: -100px
+        margin-top: 0
+      &__links
+        margin-left: auto
+        margin-top: 50px
+  .footer
+    .col-20
+      margin-left: 0 !important
+@media screen and ( max-width: 1280px )
+  .hero__catalog__list__item__catalog
+    margin-top: -10px 
+  .product-card
+    &__product
+      &__description
+        &__color
+          align-items: center
+          justify-content: center
+          &__list
+            flex-direction: column
+        &__info
+          flex-direction: column
+          align-items: center
+          &__like
+            margin-left: 0
+            margin-top: 20px
+          &__share
+            margin-left: 0
+            margin-top: 20px
+  .sale
+    .row
+      // margin: 0 auto
+      // flex-wrap: wrap
+      // max-width: 560px
+    &__ellipse
+      border: 4px solid $orange
+      width: 150px
+      height: 150px
+      &__name 
+        font-size: 18px
+      &__time 
+        font-size: 60px
+      &:nth-of-type(n+4)
+        // margin-top: 20px
+    &__image
+      &__between
+        // display: flex
+      &__hide
+        // display: none
+  .statement
+    .col-33
+      &:first-of-type, &:nth-of-type(2)
+          .popular
+            margin-left: 0
+      &:nth-of-type(2)
+        .person
+          margin-right: 0 
+        img
+          margin-left: 10px
+    &__button
+  .hero
+    &__catalog
+      &__list
+        &__item
+          margin-right: 15px !important
+        &__name
+          margin-top: -1px
+          font-size: 12px !important
+    &__content
+      &__image
+@media screen and ( max-width: 1180px )
+  .product-card__platforms__swiper
+    .product__prev-price
+      margin-left: 0
+      margin-right: 180px
+    .product 
+      align-items: center
+  .product-card
+    &__specifications
+      &__title
+        display: flex
+        flex-direction: column
+        text-decoration: underline
+      &__content
+        margin-top: 0
+        margin-left: -5px
+  .statement
+    .row
+      align-items: center
+      flex-direction: column
+    .col-33
+      margin: 0 !important
+      margin-top: 20px !important
+      min-width: 430px !important
+      max-width: 430px !important
+      &:nth-of-type(2)
+        .person
+          margin-right: -25px !important
+        img
+          margin-left: auto
+        .popular
+          margin-right: -20px !important
+        
+
+  .hero
+    &__content
+      &__image
+        margin-top: 80px
+@media screen and ( max-width: 1080px )
+  .catalog
+    .row 
+      .product__price 
+        width: 100%
+      .product, .col-20
+        min-width: 250px
+      .product__image 
+        align-items: center
+        min-width: 250px
+        min-height: 250px
+  .header
+    .menu
+      &__nav
+        img
+          margin-top: 2px
+          max-height: 10px
+          &:last-of-type
+            max-height: 18px
+        &__link
+          font-size: 10px
+  .hero
+    padding-bottom: 50px
+    &__content
+      &__header
+        &__title
+          font-size: 30px !important
+        &__image
+          margin-top: 150px
+      &__navigation-buttons
+        margin-top: 10px
+  .footer
+    .row
+      flex-wrap: wrap
+    .col-20
+      width: 50% !important
+      max-width: 50% !important
+      &:nth-of-type(n+3)
+        margin-top: 20px
+      &:nth-of-type(even)
+        display: flex
+        justify-content: flex-end 
+@media screen and ( max-width: 992px )
+  .product-card__product__description__info__item i, .product-card__product__description__info__item img
+    opacity: 1
+  .noHover
+    border-color: $dark !important
+  .catalog__content__products__total__button-next
+    color: $light !important
+    background-color: $orange !important
+  .catalog__content__list__header-list:hover, .catalog__content__products__total__button:hover
+    color: $dark !important
+    border-color: $dark !important
+  .btnActive:hover
+    background-color: $orange !important
+  .hero__content__navigation-buttons__next, .hero__content__navigation-buttons__prev
+    &:hover 
+      box-shadow: none
+  #button-up
+    color: $dark !important
+    background-color: $light !important
+  .mobile__button:hover
+    color: $light !important
+  .product__add-to-cart:hover
+    background-color: $dark 
+    color: $light 
+    border: none
+  .section-title__header__symbol:hover
+    color: $dark
+  .menu__profile img 
+    opacity: 1
+  .hero__products-status__likes, .hero__products-status__cart
+    &:hover 
+      margin-top: 0
+  .categories__item:hover, .catalog__content__category__button:last-of-type:hover
+    background-color: #f6f6f6
+    color: $dark
+  .button, .hero__content__header__button
+    &:hover
+      color: inherit 
+      background-color: inherit 
+      box-shadow: none 
+  .sale
+    &__image 
+      display: none
+  .menu
+    &__nav
+      display: none
+  .hero
+    &__catalog
+      display: none
+    &__burger-menu
+      display: block
+    &__content
+      &__col2
+        margin-left: -150px
+        margin-top: -50px
+      &__product__description
+        margin-top: 0px
+      &__header
+        padding: 50px 0
+      &__col4
+        display: none
+      &__links
+        display: none
+      &__navigation-buttons
+        display: none
+      &__image
+        margin-top: 150px
+
+@media screen and ( max-width: 950px )
+  .platforms
+    &__swiper
+      &-slide
+        margin-left: 20px
+        
+  
+@media screen and ( max-width: 900px )
+  .catalog__content__list__header-list
+    margin-top: 20px
+    display: block
+    padding: 10px
+    border-radius: 5px
+    color: $dark
+    border: 1px solid $dark
+    &:hover 
+      color: $orange 
+      border-color: $orange
+  .catalog
+    &__filter 
+      flex-direction: column
+      &__products-count
+        margin-top: 20px
+    &__content 
+      .row 
+        flex-wrap: wrap
+      .col-30 
+        width: 100%
+        margin: 0 auto
+        text-align: center
+      .col-80
+        width: 100%
+      &__header 
+        font-size: 18px
+      &__list 
+        top: 20px
+        width: 100%
+        padding: 10px
+        border: 1px solid $orange
+        background-color: $light
+        z-index: 999
+        position: absolute
+        transition: .3s 
+        opacity: 0
+        visibility: hidden
+        &__link 
+          font-size: 12px
+        &__container 
+          position: relative
+          margin: 0 auto
+      &__category 
+        &__button 
+          font-size: 14px
+  .product-card
+    &__product
+      &__description
+        &__price
+          min-width: 300px
+        &__name-rate
+          flex-direction: column
+          padding-bottom: 80px
+        &__cost-qr
+          flex-direction: column
+          align-items: center
+          text-align: center
+        &__qr 
+          margin-top: 20px
+  .statement
+    .symbol
+      display: none
+    &--bold
+      display: block
+    &__section-title
+      &__header
+        text-align: center
+
+  .header
+    .menu
+      &__nav
+        &__item
+          margin-right: 10px
+          padding: 0 12px
+          &:first-of-type::after
+            right: 10px
+          &::after
+            right: -15px 
+          &:last-of-type
+            img
+              margin-left: 14px
+@media screen and ( max-width: 810px )
+  .catalog
+    .row 
+      .col-80
+        .product__cost 
+          font-size: 16px
+        .product__image, .product 
+          min-width: 120px 
+          min-height: 120px
+      .col-20
+        margin-top: 30px
+        min-width: 200px
+        &:nth-of-type(3) 
+          margin-top: 30px
+  .product-card
+    &__product
+      &__description
+        &__info
+          &__list 
+            img
+              min-width: 16px
+              min-height: 16px
+    &__platforms
+      &__swiper
+        .product
+          margin-left: 0
+    &__specifications
+      .col-70
+        width: 100%
+      &__list1 
+        
+  .mobile
+    &__title
+      font-size: 25px
+      line-height: 30px
+    &__text
+      font-size: 20px
+  .hero
+    padding-bottom: 0
+    &__content
+      padding: 0
+      &__image
+        margin-top: 150px
+
+@media screen and ( max-width: 760px )
+  .sale 
+    &__ellipse 
+      width: 100px 
+      height: 100px 
+      &__name 
+        margin-top: -20px
+      &__time 
+        font-size: 30px
+  .hero__content__header
+    &::after
+      bottom: 20px 
+    &::before 
+      top: 20px
+  .platforms__center
+    .platforms__swiper-slide
+      text-align: center
+    .platforms
+      &__text, &__link
+        margin-left: 0
+  .catalog 
+    &__platforms__swiper
+      text-align: center
+      .platforms__link, .platforms__text
+        margin: 0
+  .product-card
+    &__crumbs
+      &__link
+        font-size: 12px 
+    &__product
+      .first-row
+        .col-40
+          align-items: center
+      &__images 
+        width: 280px
+        margin: 0 auto
+        max-height: 400px
+        &__list
+          padding-top: 300px
+        &__main
+          width: 280px
+          height: 250px
+          img 
+            max-width: 280px
+            max-height: 200px
+  .platforms
+    &__swiper
+      &__slide
+        margin-left: 0 !important
+    &__image
+      img
+        margin: 0 auto
+    &__text, &__link
+      margin-left: 50px
+  .categories, .popular-products, .product-sale
+    .section-title
+      &__header
+        min-width: 300px
+    .row
+      flex-direction: column
+      align-items: center
+      .col-20
+        min-width: 320px
+        margin-left: 0 !important
+        margin-right: 0 !important
+        &:nth-of-type(n + 3)
+          margin-bottom: 20px
+        &:last-of-type
+          margin-bottom: 0
+
+  .header
+    .menu
+      &__nav
+        display: none
+  .hero
+    &__content
+      &__image
+        display: none !important
+      &__col3
+        display: none
+@media screen and ( max-width: 740px )
+  .catalog
+    .row 
+      .col-20
+        &:nth-of-type(3) 
+          margin-top: 70px
+@media screen and ( max-width: 660px )
+  .product-card__platforms__swiper
+    .product__prev-price
+      margin-right: 0
+    .product__price
+      width: 160px
+    .product__cost 
+      font-size: 16px
+    .product__image 
+      max-width: 160px
+      max-height: 160px
+      min-width: 1px 
+      min-height: 1px
+  .catalog 
+    .row 
+      justify-content: space-between
+      .col-80 
+        margin-left: 0
+    &__filter
+      .list1
+        padding-right: 0px
+  .footer
+    &__copyright
+      &__content
+        flex-direction: column 
+        text-align: center
+      &__text
+        margin-bottom: 15px
+@media screen and ( max-width: 610px )
+  .product-card
+    &__specifications
+      &__name 
+        font-size: 12px
+      &__value 
+        font-size: 12px
+      &__line 
+        min-height: 48px
+    &__product 
+      &__description
+        margin-left: 0
+    &__crumbs 
+      flex-wrap: wrap
+      &__link
+    .first-row 
+      .col-40
+        min-width: 280px
+      .col-60
+        width: 100%
+    &__adapt-new 
+      // display: flex
+      // justify-content: space-between
+      // margin-top: 50px
+    &__adapt-clean
+      // display: none
+    &__platforms
+      &__swiper
+        .product
+        // display: none 
+  .footer
+    &__list 
+      align-items: center
+    &__content
+      padding-top: 0 !important
+    &__button
+      margin-left: auto
+      margin-right: auto
+    .row
+      flex-direction: column
+      align-items: center
+      text-align: center 
+    .col-20
+      width: 100% !important
+      max-width: 100% !important
+      margin-top: 50px
+      justify-content: center !important
+      &:last-of-type
+        text-align: center !important
+        .footer__list__item
+          margin-top: 20px !important
+          margin-bottom: 0 !important
+  .platforms
+    &__text, &__link
+      margin-left: 0 !important
+  .mobile
+    padding-top: 0
+    &__title
+      max-width: 300px
+    .col-30
+      display: none
+    .col-100
+      width: 100% !important
+
+@media screen and ( max-width: 550px )
+  .sale
+    &__image
+      &__between 
+        display: none
+    &__ellipse
+
+  .section-title
+    &::after, &::before 
+      display: none
+    &__header
+      border: none
+      padding: 0
+  .hero
+    &__burger-menu
+      margin-right: 30px
+@media screen and ( max-width: 500px )
+  .sale 
+    &__ellipse 
+      width: 80px 
+      height: 80px
+  .catalog__filter__sort__list
+    align-items: center
+  .col-30 
+    text-align: center
+  &__filter 
+    &__list 
+      &__header 
+        margin-left: auto
+  .list1, .list2 
+    max-width: 150px
+  .list1
+    margin-left: auto
+  .list2
+    padding: 10px
+  .row
+    .product__name
+      min-width: 100px
+      .col-20
+        max-width: 150px
+        min-width: 100px
+      .product__image 
+        img
+          height: 150px
+          width: 150px
+      .product__link 
+        font-size: 14px
+      .product__cost
+        font-size: 14px
+  &__content 
+    &__list 
+      a 
+        max-height: 20px
+      &__link 
+        font-size: 10px
+      &__item 
+        max-height: 20px
+        margin-top: 5px
+    .button 
+      width: 100%
+      i 
+        margin-right: 10px
+  .product-card
+    &__specifications
+      &__name 
+        font-size: 10px
+      &__value 
+        font-size: 10px
+      &__line 
+        min-height: 48px
+  .sale
+    &__image
+      width: 20px
+      img
+        display: none
+  .platforms
+    &__text
+      font-size: 14px
+      line-height: 16px
+      width: 200px 
+    &__link
+      font-size: 12px
+  .statement
+    &__section-title
+      &__header
+        font-size: 18px !important
+        padding: 20px
+    .col-33
+      max-width: 430px !important
+      min-width: 100% !important
+      min-height: 250px
+      .very-popular
+        margin-right: -30px !important
+      .popular
+        min-width: 130px
+        font-size: 12px
+      .person
+        font-size: 20px
+    &__button
+      margin-top: auto
+      margin-bottom: 20px
+  #logo__description
+    display: block
+    display: flex
+    flex-direction: column
+  .hero
+    &__products-status
+      margin-left: auto
+    &__header__logo
+      display: none
+    &__content
+      &__header
+        &__title
+          font-size: 26px !important
+          min-width: 1px
+@media screen and ( max-width: 470px )
+  .catalog
+    .row
+      justify-content: center
+      
+@media screen and ( max-width: 400px )
+  .sale 
+    &__ellipse 
+      width: 60px 
+      height: 60px
+      &__name 
+        font-size: 12px
+      &__time 
+        margin-top: -33px
+        font-size: 25px
+  .product-card__platforms__swiper
+    .product__link 
+      font-size: 16px
+    .product
+      margin-left: 10px
+    .product__image 
+      img
+        max-width: 160px
+        max-height: 160px
+  .product-sale
+    .product__image
+      margin-left: auto
+      margin-right: auto
+      max-width: 250px
+    .row
+      .col-20
+        justify-content: center !important
+        min-width: 200px
+  .categories
+    .col-20
+      min-width: 300px
+  .hero
+    &__header
+      &__logo
+        &__name
+          font-size: 16px !important
+        &__desc
+          font-size: 9px !important
+    &__burger-menu
+      margin-right: 10px
+    &__content
+      &__header
+        &__title
+          font-size: 20px !important  
+  .statement
+    .col-33
+      &:first-of-type
+        img
+          margin-left: -30px !important
+      &:nth-of-type(2)
+        .person
+          margin-left: -30px !important
+      .person, .popular, .very-popular
+        margin-left: -30px !important
+  .popular-products
+    .col-20
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      min-width: 1px !important
+  .product
+    &__price
+      // width: 250px !important
+    &__image
+      display: flex
+      justify-content: center
+      min-width: 0 !important
+      min-height: 0 !important
+      img 
+        width: 250px
+        height: 250px
+@media screen and ( max-width: 350px )
+  .product
+    &__price 
+      width: 250px
+  .catalog 
+    .product-card__crumbs__link
+      padding: 0 5px
+  .product-card
+    &__specifications
+      &__name 
+        font-size: 9px
+      &__value 
+        font-size: 9px
+  .mobile
+    &__title
+      font-size: 20px
+    &__text
+      font-size: 18px
+  .categories
+    .col-20
+      min-width: 100% !important
+  .section-title
+    &__header
+       min-width: 100% !important

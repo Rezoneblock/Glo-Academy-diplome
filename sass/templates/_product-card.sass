@@ -1,0 +1,350 @@
+.product-card
+  &__platforms
+    &__swiper-slide 
+      outline: none
+  &__section-sale
+    margin-top: 50px
+    .product
+      margin-left: 20px
+  &__adapt-new
+    display: none
+  &__crumbs
+    padding-top: 40px
+    margin-bottom: 60px
+    display: flex
+    list-style: none
+    &__link
+      font-family: 'Din Pro Light'
+      font-size: 16px
+      color: $dark
+      text-decoration: none
+      padding: 0 15px
+      border-right: 1px solid #919191
+    &__item
+      &:first-of-type
+        .product-card__crumbs__link
+          padding-left: 0
+      &:last-of-type
+        .product-card__crumbs__link
+          border-right: none
+          color: #919191
+  &__content
+    .row
+      width: 100%
+      display: flex
+  &__product 
+    &__images
+      position: relative
+      height: 670px
+      width: 550px
+      &__main
+        position: absolute
+        opacity: 0
+        visibility: hidden
+        top: 0
+        left: 0
+        width: 550px
+        height: 550px
+        border: 1px solid #d7d7d7
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: .5s
+      &__list
+        padding-top: 580px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        list-style: none
+      &__item
+        cursor: pointer
+        width: 87px
+        height: 87px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 1px solid #d7d7d7
+        transition: .3s
+        &:hover
+          border-color: $orange
+    &__description
+      margin-left: 35px
+      &__info
+        margin-top: 20px
+        display: flex
+        &__in-cart
+          font-size: 14px
+        &__like
+          font-size: 14px
+          margin-left: 30px
+        &__share 
+          margin-left: auto
+          display: flex
+          &__text
+            font-size: 14px
+            font-family: 'Din Pro Regular'
+        &__list
+          display: flex
+          list-style: none
+        &__item
+          margin-left: 20px
+          a
+            color: $dark
+          i, img
+            width: 16px
+            height: 16px
+            opacity: .6
+            transition: .3s
+            &:hover
+              opacity: 1
+      &__actions
+        padding: 30px 0
+        display: flex
+        align-items: center
+        border-bottom: 2px dashed #d7d7d7
+        i 
+          margin-right: 16px
+        &__add-to-cart
+          background-color: $light
+          color: $dark
+          font-size: 18px 
+          font-family: 'Din Pro Regular'
+          &:hover
+            background-color: $orange
+            color: $light
+            border-color: $orange
+        &__like 
+          background-color: $light
+          font-size: 18px 
+          font-family: 'Din Pro Regular'
+          margin-left: 20px
+          &:hover
+            background-color: $orange
+            color: $light
+            border-color: $orange
+        &__wholesale
+          margin-left: auto
+          background-color: $light
+          font-size: 18px 
+          font-family: 'Din Pro Regular'
+          &:hover
+            background-color: $orange
+            color: $light
+            border-color: $orange
+      &__name
+        font-family: 'Din Pro Bold'
+        font-size: 24px
+        margin-top: -5px
+        &-rate
+          margin-top: -20px
+          display: flex
+          justify-content: space-between
+          align-items: center
+          max-height: 70px
+          border-bottom: 1px solid #d7d7d7
+      &__views
+        color: #919191
+        font-size: 14px
+      &__rate
+        display: flex
+        align-items: center
+      &__cost
+        display: flex
+        flex-direction: column
+        &-qr
+          margin-top: 30px
+          display: flex
+          justify-content: space-between
+          padding-bottom: 33px
+          border-bottom: 2px dashed #d7d7d7
+      &__price
+        font-family: 'Din Pro Bold'
+        font-size: 48px
+      &__available
+        font-size: 16px
+        color: #919191
+      &__color
+        margin-top: 30px
+        padding-bottom: 30px
+        display: flex
+        border-bottom: 2px dashed #d7d7d7
+        &__text
+          font-size: 16px
+        &__list
+          margin-left: 30px
+          display: flex
+          list-style: none
+        &__item
+          cursor: pointer
+          margin-right: 10px
+          display: flex
+          width: 125px
+          height: 30px
+          align-items: center
+          padding: 1px
+          &:hover
+            border: 1px solid $orange
+          &:last-of-type
+            margin-right: 0
+        &__name
+          font-family: 'Din Pro Regular'
+          font-size: 14px
+          margin: 0 auto
+      &__delivery
+        margin-top: 24px
+        display: flex
+        flex-direction: column
+        padding-bottom: 30px
+        border-bottom: 2px dashed #d7d7d7
+        &__name
+          font-size: 16px
+          margin-bottom: 30px
+        label
+          font-size: 16px
+          font-family: 'Din Pro Regular'
+        input
+          margin-right: 10px 
+          outline: none
+          appearance: none
+          width: 20px
+          height: 20px
+          border: 1px solid #919191
+          border-radius: 50%
+          &:checked
+            background: url('../img/product/active.png') no-repeat center
+        &__self__points
+          display: none
+        &__method
+          display: flex
+          align-items: center
+          position: relative
+          &__item
+            padding-bottom: 20px
+            padding-left: 30px
+            padding-right: 30px
+            display: flex
+            align-items: center
+            background-color: #fff
+            &:first-of-type
+              border-left: none !important
+              padding-left: 0
+            &::after 
+              content: ''
+              position: absolute
+              right: 0
+              bottom: 0
+              width: 100%
+              height: 1px
+              background-color: #919191
+              z-index: -999
+        &__points
+          &__content
+            display: flex
+            justify-content: space-around
+          &__name
+            display: block
+            margin-bottom: 20px
+            margin-top: 24px
+            margin-left: 34px
+          &__item
+            display: flex
+            align-items: center
+            padding: 4px
+            margin-right: 10px
+            border: 1px solid #919191
+            label
+              font-family: 'Din Pro Regular'
+              font-size: 14px
+            &:last-of-type
+              margin-right: 0
+  &__specifications
+    padding-top: 100px
+    &__title
+      &__header
+        cursor: pointer
+        font-size: 18px
+        font-family: 'Din Pro Regular'
+        padding: 20px 40px
+        margin-left: -5px
+        transition: .3s
+        color: $dark
+        &:first-of-type
+          margin-left: 0
+    &__content
+      display: flex
+      background-color: #f5f5f5
+      padding: 40px
+      padding-top: 0
+      margin-top: 19px
+    &__name
+      font-size: 18px
+      color: $dark
+    &__value
+      font-family: 'Din Pro Bold'
+      font-size: 18px
+      color: $dark
+    &__line
+      display: flex
+      padding: 16px 0
+      border-bottom: 1px solid #e1e1e1
+      &:last-of-type
+        border-bottom: none
+    &__list1 
+      margin-top: 10px
+      width: 60%
+    &__list2
+      margin-top: 10px
+      width: 40%
+      margin-left: auto
+  &__recent
+    margin-left: 30px
+    &__header
+      font-family: 'Din Pro Medium'
+      font-size: 18px
+      text-transform: uppercase
+    .col-20
+      width: 100%
+    .product__image
+      min-width: 87px
+      min-height: 87px
+      width: 87px
+      margin: auto 0
+    .product
+      display: flex
+      flex-direction: row
+      border-bottom: 1px solid #919191
+      padding-top: 30px
+      padding-bottom: 30px
+      &:last-of-type
+        border-bottom: none
+      &__cost
+        font-size: 24px
+      &__name
+        a
+         font-size: 16px
+      &:first-of-type
+        padding-top: 22px
+      &__price
+        border: none
+        padding-top: 0
+      &__rate
+        margin: 20px 0
+        margin-left: 20px
+
+
+.ml6px
+  margin-left: 6px
+
+    
+
+#saller
+  display: none 
+#othersites
+  display: none 
+
+
+    
+
+        
+#qq, #ee
+  border-color: $orange

@@ -1,0 +1,373 @@
+.product
+  display: flex
+  flex-direction: column
+  &__prev-price
+    font-family: 'Din Pro'
+    font-size: 18px
+    line-height: 24px
+    color: #919191
+    margin-left: 20px
+    &__value
+      text-decoration: line-through
+  &__image
+    cursor: pointer
+    position: relative
+    min-width: 320px
+    min-height: 320px
+    margin-bottom: 20px
+    z-index: 500
+    &__sale
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: 'Din Pro'
+      color: $light
+      font-size: 30px
+      z-index: 999
+      position: absolute 
+      top: 15px
+      left: -10px
+      width: 71px
+      height: 50px
+      background-color: $orange
+      opacity: 1
+      &__corner
+        z-index: -999
+        position: absolute
+        width: 15px
+        height: 8px
+        background-color: #ffd1b0
+        top: 64px
+        left: -9px
+        transform: rotate(45deg)
+    &::after      
+      content: ''
+      width: 0%
+      height: 0%
+      bottom: 0
+      right: 0
+      position: absolute
+      background-color: $dark
+      opacity: .8
+      transition: .5s
+    &:hover::after 
+      width: 100%
+      height: 100%
+      top: 0
+      right: 0
+    &:hover .product__image-hover
+      opacity: 1
+      &-second
+        color: $orange
+    &-hover
+      position: absolute
+      right: 20px
+      opacity: 0
+      transition: .6s
+      z-index: 999
+      &-first
+        top: 20px
+        color: $light
+        &:hover
+          color: $orange
+      &-second
+        top: 56px
+        color: $light
+        &:hover
+          color: $light !important
+  &__description
+    font-family: 'Din Pro Light'
+    list-style: none
+  &__name
+    margin-left: 20px
+    font-family: 'Din Pro Regular'
+    font-size: 18px
+    margin-bottom: 5px
+    color: $dark
+    a 
+      color: $dark
+  &__type
+    margin-left: 20px
+    font-size: 14px
+    a 
+      color: #919191
+  &__link
+    text-decoration: none
+  &__rate
+    margin-left: 20px
+    margin-top: 20px
+    margin-bottom: 30px
+    position: relative
+    display: flex
+    justify-content: flex-end
+    flex-direction: row-reverse
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    input
+      display: none
+      &:checked ~ label::after
+        opacity: 1      
+    label
+      display: block
+      cursor: pointer
+      width: 20px
+      &:hover::after,
+      &:hover ~ label::after,
+        opacity: 1
+      &::before
+        content: '\f005'
+        font-family: 'fontAwesome'
+        position: relative
+        display: block
+        font-size: 15px
+      &::after
+        content: '\f005'
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900;
+        position: absolute
+        top: 0
+        display: block
+        font-size: 15px
+        color: $orange
+        opacity: 0
+        transition: .3s
+        
+        
+  &__price
+    padding-top: 20px
+    display: flex
+    width: 320px
+    align-items: center
+    border-top: 1px solid #d7d7d7
+  &__naminal
+    font-size: 16px !important
+    
+  &__cost
+    font-family: 'Din Pro Regular'
+    font-size: 30px
+    color: $dark
+    margin-left: 20px
+    margin-right: auto
+  &__add-to-cart
+    margin-right: 20px
+    margin-left: auto
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 25px
+    height: 24px
+    background-color: $dark
+    color: $light
+    border-radius: 50%
+    transition: .3s
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    &:hover
+      background-color: $light
+      color: $dark
+      border: 1px solid $dark
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+.popular, .very-popular
+  font-family: 'Din Pro Light'
+  font-size: 14px
+  color: #919191
+  line-height: 24px
+.person
+  font-family: 'Din Pro'
+  font-size: 24px
+  color: #000
+  line-height: 24px
+.button
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  font-family: 'Din Pro Medium'
+  font-size: 14px
+  padding: 15px 28px
+  outline: none
+  border: 2px solid $dark
+  color: $dark
+  transition: .3s
+  &__link
+    text-decoration: none
+    color: $dark
+.section-title
+  position: relative
+  display: flex
+  justify-content: center
+  text-align: center
+  align-items: center
+  margin-bottom: 50px
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    width: 50%
+    height: 1px
+    background: linear-gradient(to right, #fff, $dark)
+    z-index: -999
+  &::after
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    width: 50%
+    height: 1px
+    background: linear-gradient(to left, #fff, $dark, $dark)
+    z-index: -999  
+  &__header
+    padding: 0 66px
+    font-family: 'Din Pro Light'
+    font-size: 36px
+    line-height: 30px
+    font-weight: normal
+    background-color: #fff
+    z-index: 999
+    border-left: 1px solid $dark 
+    border-right: 1px solid $dark 
+    &__symbol
+      text-decoration: none !important
+      transition: .3s
+      &:hover
+        color: $orange
+
+.product
+  cursor: pointer
+
+
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 999
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($dark, 0.6)
+  display: flex
+  align-items: center
+  justify-content: center
+  .policy__label
+  .policy__checkbox 
+    padding: 5px
+  #policyCheckbox-error
+    margin-bottom: -30px
+    font-size: 12px
+    display: block
+  .invalid
+    font-size: 12px 
+    color: red
+  .main-modal__policy
+    margin-right: 50px;
+    margin-top: -40px;
+    min-height: 20px
+  .input
+    font-size: 18px !important
+    min-height: 35px
+    background-color: $light
+    border: 2px solid $orange
+    border-radius: 5px
+    padding: 10px
+  &--visible
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    max-width: 36.35rem
+    background: $dark
+    padding: 2.357rem 3.5rem 1.928rem
+    color: $orange
+    border: 2px solid $orange
+    border-radius: 10px
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+    outline: none
+  &-thanks
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 999
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.6)
+    display: flex
+    align-items: center
+    justify-content: center
+    &__title
+      font-family: 'Yeseva One', cursive
+      font-size: 1.357rem
+      text-align: center
+      margin: 0
+      margin-bottom: 2.428rem
+    &__text
+      text-align: center
+      &__link
+        font-size: 24px
+        a
+          color: red
+          text-decoration: none
+   
+  &__title
+    font-family: 'Din Pro Medium', cursive
+    font-size: 1.357rem
+    font-weight: normal
+    text-align: center
+    margin: 0
+    margin-bottom: 2.428rem
+  &__form
+    display: flex
+    flex-direction: column
+  &__input
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 1.428rem
+      min-height: 96px
+    &:last-of-type
+      margin-bottom: 1rem
+  &__policy
+    margin-bottom: 2.7rem
+  &__button
+    align-self: flex-end
+    outline: none
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #f47920;
+    font-family: 'Din Pro Medium';
+
+.password 
+  display: flex 
+  flex-direction: column
+  margin-bottom: 50px

@@ -1,0 +1,159 @@
+.catalog__header
+
+.catalog
+  .product-card__crumbs
+    margin-bottom: 0
+    padding-top: 0
+    max-height: 20px
+  &__header 
+    display: flex
+    padding-top: 40px
+  &__filter
+    margin-left: auto
+    display: flex
+    select
+      background-color: $light
+      padding: 12px 0
+      padding-left: 16px
+      font-family: 'Din Pro Regular'
+      font-size: 14px
+      color: $dark
+    .list1
+      padding-right: 180px
+    .list2
+      padding-right: 66px
+    &__list__header
+      margin-bottom: 10px
+      font-size: 14px 
+      color: #919191
+    &__sort 
+      &__list
+        display: flex
+        flex-direction: column
+    &__products-count
+      margin-left: 30px
+      &__list
+        display: flex
+        flex-direction: column
+  &__content 
+    margin-top: 15px
+    .col-80 
+      margin-left: 30px
+    &__products 
+      max-width: 1020px
+      margin-top: 50px
+      &__total 
+        margin-top: 60px
+        text-align: center
+        &-search, &-view
+          font-family: 'Din Pro Light'
+          font-family: 16px 
+          color: #919191
+          .text--bold 
+            color: #919191
+        &__buttons 
+          padding-top: 30px
+          display: flex
+          justify-content: center
+          .catalog-button-active
+            color: $dark 
+            background-color: #e7e7e7
+            border: none
+        &__button
+          cursor: pointer
+          font-family: 'Din Pro Medium'
+          font-size: 14px 
+          color: $dark 
+          border: 2px solid $dark
+          background-color: $light
+          width: 45px 
+          height: 45px
+          margin-right: 10px
+          transition: .3s
+          &:hover 
+            border-color: $orange 
+            color: $orange
+          &-next 
+            cursor: pointer
+            background-color: $orange 
+            color: $light
+            border: none 
+            width: 45px 
+            height: 45px
+            transition: .3s
+            &:hover 
+              border: 2px solid $orange
+              background-color: $light
+              color: $orange
+      .row 
+        width: 100%
+        flex-wrap: wrap
+        justify-content: space-between
+        .product, .col-20
+          min-width: 320px
+        .col-20 
+          &:nth-of-type(n+4)
+            margin-top: 70px
+            
+        .product__name
+          min-width: 200px
+    &__list
+      margin-top: 8px
+      display: flex
+      flex-direction: column 
+      list-style: none
+      &__link 
+        cursor: pointer
+        font-family: 'Din Pro Medium'
+        color: $dark
+        font-size: 16px
+        line-height: 36px
+        text-decoration: none
+        transition: .3s
+        &:hover 
+          text-decoration: underline 
+          color: $orange
+      .catalog-item-active
+        text-decoration: underline 
+        color: $orange
+      &__item 
+        margin-top: 0px
+      &__header 
+        font-family: 'Din Pro Medium'
+        font-size: 16px
+        color: #919191
+    .col-30
+      max-width: 320px
+      .btnActive 
+        background-color: $orange
+        color: $light
+    &__header
+      font-family: 'Din Pro Light'
+      font-size: 24px
+      color: $dark
+      font-weight: normal
+      border-bottom: 1px solid #d7d7d7
+      padding-bottom: 20px
+    &__category
+      &__buttons
+        padding: 30px 0
+      &__button
+        margin-bottom: 10px
+        justify-content: flex-start
+        padding: 20px
+        width: 100%
+        background-color: $gray
+        border: none
+        color: $dark
+        font-family: 'Din Pro Medium'
+        font-size: 16px
+        border-radius: 5px
+        &:last-of-type
+          margin-bottom: 0
+        &:hover 
+          background-color: $orange
+          color: $light
+        i 
+          margin-right: 25px
+.catalog__content__list__header-list
+  display: none

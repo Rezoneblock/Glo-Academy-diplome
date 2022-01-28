@@ -1,0 +1,82 @@
+@import 'fonts'
+@import 'settings'
+@import 'grid'
+@import 'variables'
+@import 'interface'
+@import 'templates/header'
+@import 'templates/hero'
+@import 'templates/statement'
+@import 'templates/categories'
+@import 'templates/popular-products'
+@import 'templates/sale'
+@import 'templates/product-sale'
+@import 'templates/mobile'
+@import 'templates/platforms'
+@import 'templates/footer'
+@import 'templates/product-card'
+@import 'templates/catalog'
+@import 'media'
+@import 'crossbrowser'
+
+.none 
+  display: none
+#lightBg
+  background-color: $light !important
+#lightBg2
+  background-color: $light !important
+
+.image-active
+  opacity: 1
+  visibility: visible
+.item-active
+  border: 1px solid $orange
+
+
+.text--bold
+  font-family: 'Din Pro Bold'
+  color: $dark
+  
+.small-font
+  font-size: 24px
+
+.trueMethod
+  border-right: 1px solid #919191
+  border-left: 1px solid #919191
+.falseMethod
+  border-bottom: 1px solid #919191
+.header-active
+  background-color: #f5f5f5
+
+
+.animation
+  animation: animate 2s ease
+
+@keyframes animate
+  0%
+    opacity: 0
+  70%
+    opacity: 1
+  
+
+#button-up 
+ display: none
+ right: 50px;
+ margin: 0;
+ position: fixed;
+ bottom: 50px;
+ outline: none;
+ width: 100px;
+ color: #333333;
+ line-height: 30px;
+ font-family: 'Din Pro Medium', cursive
+ text-decoration: none;
+ padding-left: 25px
+ background: $light; 
+ border-radius: 0 4px 4px 0;
+ box-shadow: 0 2px 4px #999;
+ cursor: pointer;
+ z-index: 9999999
+ transition: .3s
+ &:hover 
+   background-color: $orange
+   color: $light
